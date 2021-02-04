@@ -1,13 +1,27 @@
-<?php echo "this is a test file" ?>
+<?php
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Violin Classics History</title>
-</head>
-<body>
-    <h1>Learn about violinists here</h1>
-</body>
-</html>
+//Set DSN (Data Source Name)
+
+$host = 'localhost';
+
+$username = 'root';
+
+$password = 'Ritter*1734!';
+
+$options = [];
+
+$dbname = 'great_musicians';
+
+$dsn = 'mysql:host='.$host . ';dbname=' . $dbname;
+
+
+try{
+    $connection = new PDO($dsn, $username, $password, $options); //data source name
+    echo '<p class ="text-light">connected</p>';
+
+} catch(PDOException $e) {
+    echo '<h3 class ="text-light">There was an unexpected error</h3>';
+}
+
+
+?>

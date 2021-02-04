@@ -1,0 +1,72 @@
+Kyung Wha Chung is recognized throughout the world as one of the finest violinists of her generation. A prolific recording artist, her dazzling and probing artistry has made her a much-acclaimed performer throughout her forty-year career. Lauded for her passion, her musicality, and the intense excitement that she brings to her performances, Chung’s uniquely expressive interpretations of the violin literature have established her as an artist of the very highest stature. Born in South Korea, Chung first heard the violin at the age of six. Instantly mesmerized by its tone, she was swiftly recognized as a child prodigy, making her concert debut aged nine with the Seoul Philharmonic Orchestra, performing the Mendelssohn Violin Concerto. At thirteen, Chung enrolled at The Juilliard School, New York, and began studying with renowned pedagogue Ivan Galamian, and later with Joseph Szigeti.
+
+
+<!-- <tr>
+
+ <!-- <td>//<?= $musician->id; ?> </td>
+
+<td> <?= $musician->name; ?> </td>
+
+<td> <?= $musician->role; ?> </td> --> -->
+
+<td>  <?= $musician->info ?> </td>
+
+<!--<a href ="edit.php?id=<?= $person->id ?>" class = "btn btn-info">Edit</a>
+
+<a onclick= "return confirm('Are you sure you wanted to delete this entry?')" href ="delete.php?id=<?= $person->id ?>" class = "btn btn-danger">Delete</a>
+
+ </td> -->
+
+</tr>
+
+
+
+<!--<div class="container">
+
+<div class="card mt-5">
+
+<div class="card-header">
+
+<h2>Musicians</h2>
+
+</div>
+
+<div class = "card-body"> -->
+
+<table class="table table-bordered">
+ 
+ <tr>
+
+ <!--<th>ID</th>
+
+ <th>Name</th> -->
+
+ <th>Role</th>
+
+ <!--<th>Info</th> -->
+
+</tr>
+
+<?php foreach($musicians as $musician): ?>
+
+<tr>
+
+<!-- <td><?= $musician->id; ?> </td>
+
+<td> <?= $musician->name; ?> </td>
+
+<td> <?= $musician->role; ?> </td> -->
+
+<td>  <?= $musician->info ?> </td>
+
+<!--<a href ="edit.php?id=<?= $person->id ?>" class = "btn btn-info">Edit</a>
+
+<a onclick= "return confirm('Are you sure you wanted to delete this entry?')" href ="delete.php?id=<?= $person->id ?>" class = "btn btn-danger">Delete</a>
+
+ </td> -->
+
+</tr>
+
+<?php endforeach; ?>
+
+<button type='button' class='btn btn-lg btn-danger' data-toggle='popover' title='Violinist' data-content= '<?php $sql = 'SELECT * FROM musicians WHERE id=2';?> <?php foreach($musicians as $musician): ?> <?= $musician->info; ?> <?php endforeach; ?>'>Violinist Biography</button>
