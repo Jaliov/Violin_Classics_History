@@ -8,7 +8,7 @@ $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?> 
 
 <?php
-$card = "<div class='card' style='width: 100%;'>
+$card = "<div class='card bg-light mb-3' style='width: 100%;'>
 <div class='embed-responsive embed-responsive-21by9'>"; 
 ?>
 
@@ -18,11 +18,7 @@ $(function () {
 })
 </script>
 
-
- <?php $soloist = "Jonnie";
-$buttonPlace = "<button type='button' class='btn btn-lg btn-danger' data-toggle='popover' data-placement='top' data-trigger ='hover'";
-?>
-
 <?php
-$buttonPlace2 = "<button type='button' class='btn btn-lg btn-danger' data-toggle='popover' data-trigger ='hover' title='Composer'";
+$buttonPlace = "<button type='button' class='btn btn-info' data-toggle='popover' data-placement='left' data-trigger ='hover'";
 ?>
+
