@@ -8,15 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Great Violinists History</title>
 </head>
-<body class = "bg-secondary">
-
+ <body style="background-image: url('ViolinImbBlurDark.jpg');">
+ <!--<body class = "bg-secondary"> -->
 <div class = "container">
 
 <h1 class = "text-danger">Great Violinists!</h1>
 
-<script>
-// document.getElementById("display").addEventListener("mouseover",
-// $(function () {
-//   $('[data-toggle="popover"]').popover()
-// }))
-</script>
+<p class = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem explicabo quo quod architecto doloribus perferendis veritatis sed, labore culpa aperiam dolore, minima temporibus rem nesciunt officia quam maxime totam odio. </p>

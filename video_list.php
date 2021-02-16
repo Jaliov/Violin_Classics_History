@@ -25,4 +25,6 @@ $clip11 = "https://www.youtube.com/embed/DJh6i-t_I1Q"; //Oistrak Menuhin Bach Do
 $clip12 = "https://www.youtube.com/embed/SSbZRpuW08k?start=71"; # Hahn Mozart 3 
 
 $clip13 = "https://www.youtube.com/embed/06OajNL1xeo"; #Ferras Sibelius
+
+$clip14 = "https://www.youtube.com/embed/hB5SSbn0xLo"; #Szeryng plays Vivaldi
 ?>

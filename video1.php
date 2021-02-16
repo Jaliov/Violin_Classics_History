@@ -10,17 +10,45 @@
 
 <?php include 'views.php'; ?>
 
-<?php echo $view2; ?>
-
+<?php echo $view1; #Henryk Szeryng?> 
 <?php
-//Kyung Wha Chung Bach A minor:
-$id = 2;  
+$id = 20;  
 $stmt = $connection->prepare('SELECT * FROM musicians WHERE id = ?');
 $stmt->execute(array($id));
 $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php foreach($musicians as $musician): ?>
+<?php echo $info1 . $musician->concerto .
+"</div>
+</div>"; 
+; ?>
+<?php echo $buttonPlace .
+"data-content= '$musician->info' title = '$musician->role'>$musician->name</button>";?>
+<?php endforeach; ?>
+
+<?php $id = 19; $stmt; #Antoinio Vivaldi
+$stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
+?>
+
+<?php foreach($musicians as $musician): ?>
+<?php echo $buttonPlace . "data-content='$musician->info;' title = '$musician->role'>$musician->name</button>"; ?>
+<?php endforeach; echo "</div></div><br>";?>
+
+<?php echo $view2; //Kyung Wha Chung Bach A minor:?>
+<?php
+$id = 2;  
+$stmt;
+$stmt->execute(array($id));
+$musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
+?>
+
+
+
+<?php foreach($musicians as $musician): ?>
+<?php echo $info2 . $musician->concerto .
+"</div>
+</div>"; ?>
 <?php echo $buttonPlace .
 "data-content= '$musician->info' title = '$musician->role'>$musician->name</button>";?>
 <?php endforeach; ?>
@@ -30,13 +58,10 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php foreach($musicians as $musician): ?>
-<?php echo $buttonPlace . "data-content='$musician->info 'The Violin Concerto in A minor, BWV 1041 may have been written 1717–23, but possibly later in Leipzig.' title = '$musician->role'>$musician->name</button>"; ?>
-<?php endforeach; echo "</div></div><br>";?>
+<?php echo $buttonPlace . "data-content='$musician->info title = '$musician->role'>$musician->name</button>"; ?>
+<?php endforeach; echo "</div></div><br>"; ?>
 
-
-<?php echo $card; ?>
 <?php echo $view3; ?>
-
 <?php  //Menuhin
 $id = 4; $stmt; $stmt->execute(array($id));
 $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
@@ -66,7 +91,6 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 <?php echo $buttonPlace . "data-content='$musician->info Bach composed his Concerto for Two Violins in D minor, BWV 1043, around 1730, as part of a concert series he ran as the Director of the Collegium Musicum in Leipzig.' title = '$musician->role'>$musician->name</button>"; ?>
 <?php endforeach; echo "</div></div><br>";?>
 
-<?php echo $card; ?>
 <?php echo $view4; ?>
 
 <?php $id = 5; $stmt; //Hahn
@@ -86,7 +110,6 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 <?php echo $buttonPlace . "data-content='$musician->info;' title = '$musician->role'>$musician->name</button>"; ?>
 <?php endforeach; echo "</div></div><br>";?>
 
-<?php echo $card; ?>
 <?php echo $view5; ?> <!--Beethoven -->
 
 <?php $id = 13; $stmt;
@@ -170,7 +193,6 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 ?>
 
 <?php echo $view9; ?>
-
 <?php $id = 1; $stmt; $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
@@ -213,7 +235,7 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 </div>
 </div>
 
-<?php include "footer.php"; ?>
+<!-- <?php include "footer.php"; ?> -->
 </body>
 </html>
 

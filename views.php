@@ -1,11 +1,34 @@
+
+
 <?php
-$view2 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip1'></iframe></div><div class='card-body'><h5 class='card-title'>Bach Violin Concerto in A minor</h5>";
 
-$view3 = "<iframe id ='player' class='embed-responsive-item' src='$clip11'></iframe></div><div class='card-body'><h5 class='card-title'>Bach Double Concerto in D minor</h5>";
+$collapse = "<button class='btn btn-outline-secondary' type='button' data-toggle='collapse'  aria-expanded='false' aria-controls='collapseExample'"; 
 
-$view4 = "<iframe id ='player' class='embed-responsive-item' src='$clip12'></iframe></div><div class='card-body'><h5 class='card-title'>Mozart Violin Concerto No 3</h5>";
+$colAdd1 = "data-target='#collapseExample1'>";
 
-$view5 = "<iframe id ='player' class='embed-responsive-item' src='$clip3'></iframe></div><div class='card-body'><h5 class='card-title'>Beethoven Violin Concerto in D</h5>";
+$info1 = "<div class='collapse' id='collapseExample1'>
+<div class='card card-body'>";
+
+$view1 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip14'></iframe></div><div class='card-body bg-light'>" . $collapse . $colAdd1 .
+
+"Vivaldi Violin Concerto in A minor <small> (Audio only) </small>
+</button>";
+// $info1;
+
+$colAdd2 = "data-target='#collapseExample2'>";
+
+$info2 = "<div class='collapse' id='collapseExample2'>
+<div class='card card-body'>";
+
+$view2 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip1'></iframe></div><div class='card-body bg-light'>" .  $collapse . $colAdd2 .
+"<h5>Bach Violin Concerto in A minor</h5></button>";
+// $info2;
+
+$view3  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip11'></iframe></div><div class='card-body'><h5 class='card-title'>Bach Double Concerto in D minor</h5>";
+
+$view4  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip12'></iframe></div><div class='card-body'><h5 class='card-title'>Mozart Violin Concerto No 3</h5>";
+
+$view5  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip3'></iframe></div><div class='card-body'><h5 class='card-title'>Beethoven Violin Concerto in D</h5>";
 
 $view6 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip9'></iframe></div><div class='card-body'><h5 class='card-title'>Paganini Concerto No. 4</h5>";
 
@@ -16,23 +39,6 @@ $view8 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip8
 $view9 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip7'></iframe></div><div class='card-body'><h5 class='card-title'>Tchaikovsky Violin Concerto in D</h5>";
 
 $view10 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip13'></iframe></div><div class='card-body'><h5 class='card-title'>Sibelius Violin Concerto</h5>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ?>
