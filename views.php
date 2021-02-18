@@ -1,5 +1,3 @@
-
-
 <?php
 
 $collapse = "<button class='btn btn-outline-secondary' type='button' data-toggle='collapse'  aria-expanded='false' aria-controls='collapseExample'"; 
@@ -21,10 +19,15 @@ $info2 = "<div class='collapse' id='collapseExample2'>
 <div class='card card-body'>";
 
 $view2 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip1'></iframe></div><div class='card-body bg-light'>" .  $collapse . $colAdd2 .
-"<h5>Bach Violin Concerto in A minor</h5></button>";
+"Bach Violin Concerto in A minor</button>";
 // $info2;
+$colAdd3 = "data-target='#collapseExample3'>";
 
-$view3  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip11'></iframe></div><div class='card-body'><h5 class='card-title'>Bach Double Concerto in D minor</h5>";
+$info3 = "<div class='collapse' id='collapseExample3'>
+<div class='card card-body'>";
+
+$view3  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip11'></iframe></div><div class='card-body'>" . $collapse . $colAdd3 .
+"Bach Double Concerto in D minor</button>";
 
 $view4  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip12'></iframe></div><div class='card-body'><h5 class='card-title'>Mozart Violin Concerto No 3</h5>";
 

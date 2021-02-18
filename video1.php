@@ -1,4 +1,4 @@
-<?php require 'db_connect.php'; ?>
+<<?php require 'db_connect.php'; ?>
 
 <?php include 'header.php'; ?>
 
@@ -68,6 +68,10 @@ $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php foreach($musicians as $musician): ?>
+    <?php echo $info3 . $musician->concerto .
+"</div>
+</div>"; 
+; ?>
 <?php echo $buttonPlace .
 "data-content= '$musician->info;' title = '$musician->role'>$musician->name</button>";?>
 <?php endforeach; ?>
@@ -88,7 +92,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php foreach($musicians as $musician): ?>
-<?php echo $buttonPlace . "data-content='$musician->info Bach composed his Concerto for Two Violins in D minor, BWV 1043, around 1730, as part of a concert series he ran as the Director of the Collegium Musicum in Leipzig.' title = '$musician->role'>$musician->name</button>"; ?>
+<?php echo $buttonPlace . "data-content='$musician->info'  title = '$musician->role'>$musician->name</button>"; ?>
 <?php endforeach; echo "</div></div><br>";?>
 
 <?php echo $view4; ?>
@@ -238,5 +242,3 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 <!-- <?php include "footer.php"; ?> -->
 </body>
 </html>
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VaAGFXuqA7g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
