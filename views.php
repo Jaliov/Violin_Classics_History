@@ -1,6 +1,11 @@
 
 <?php
 
+$card = "<div class='card bg-light mb-3' style='width: 100%;'>
+<div class='embed-responsive embed-responsive-21by9'>"; 
+
+$buttonPlace = "<button type='button' class='btn btn-outline-info' data-toggle='popover' data-placement='left' data-trigger ='hover'";
+
 $collapse = "<button class='btn btn-outline-secondary' type='button' data-toggle='collapse'  aria-expanded='false'  aria-controls='collapseExample'"; 
 
 $colAdd1 = "data-target='#collapseExample1'>";

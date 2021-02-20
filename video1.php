@@ -1,7 +1,9 @@
-<?php require 'db_connect.php'; ?> <?php include 'header.php'; ?> 
-<?php require 'card.php'; ?>
+<?php require 'db_connect.php'; ?> 
+<?php include 'header.php'; ?> 
+<?php require 'video_list.php'; ?> 
+<?php require 'views.php'; ?>
+<?php require 'popover_script.php'; ?>
 
-<?php include 'video_list.php'; ?> <?php include 'views.php'; ?>
 <?php echo $view1; #Henryk Szeryng?> 
 <?php
 $id = 20;  
