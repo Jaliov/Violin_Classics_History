@@ -8,9 +8,9 @@ $card = "<div class='card bg-light mb-3' style='width: 100%;'>
 $buttonPlace = "<button type='button' class='btn btn-outline-info' data-toggle='popover' data-placement='left' data-trigger ='hover'";
 ?>
 
-
 <script>
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
 </script>
+

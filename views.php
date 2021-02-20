@@ -1,6 +1,7 @@
+
 <?php
 
-$collapse = "<button class='btn btn-outline-secondary' type='button' data-toggle='collapse'  aria-expanded='false' aria-controls='collapseExample'"; 
+$collapse = "<button class='btn btn-outline-secondary' type='button' data-toggle='collapse'  aria-expanded='false'  aria-controls='collapseExample'"; 
 
 $colAdd1 = "data-target='#collapseExample1'>";
 
@@ -8,10 +9,8 @@ $info1 = "<div class='collapse' id='collapseExample1'>
 <div class='card card-body'>";
 
 $view1 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip14'></iframe></div><div class='card-body bg-light'>" . $collapse . $colAdd1 .
-
-"Vivaldi Violin Concerto in A minor <small> (Audio only) </small>
+"Vivaldi Violin Concerto in A minor <small> (audio only) </small>
 </button>";
-// $info1;
 
 $colAdd2 = "data-target='#collapseExample2'>";
 
@@ -34,7 +33,7 @@ $colAdd4 = "data-target='#collapseExample4'>";
 $info4 = "<div class='collapse' id='collapseExample4'>
 <div class='card card-body'>";
 
-$view4  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip12'></iframe></div><div class='card-body'> " .  $collapse . $colAdd4 . "Mozart Violin Concerto No 3</button>";
+$view4  = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip12'></iframe></div><div class='card-body'>" .  $collapse . $colAdd4 . "Mozart Violin Concerto No 3</button>";
 
 $colAdd5 = "data-target='#collapseExample5'>";
 
@@ -57,15 +56,33 @@ $info7 = "<div class='collapse' id='collapseExample7'>
 
 $view6 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip9'></iframe></div><div class='card-body'>" .  $collapse . $colAdd7 . "Paganini Concerto No. 4</button>";
 
-$view7 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip4'></iframe></div><div class='card-body'><h5 class='card-title'>Mendelsohn Violin Concerto in E</h5>";
+$colAdd8 = "data-target='#collapseExample8'>";
 
-$view8 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip8'></iframe></div><div class='card-body'><h5 class='card-title'>Brahms Violin Concerto in D</h5>";
+$info8 = "<div class='collapse' id='collapseExample8'>
+<div class='card card-body'>";
 
-$view9 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip7'></iframe></div><div class='card-body'><h5 class='card-title'>Tchaikovsky Violin Concerto in D</h5>";
+$view7 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip4'></iframe></div><div class='card-body'>".  $collapse . $colAdd8 . "Mendelsohn Violin Concerto in E</button>";
 
-$view10 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip13'></iframe></div><div class='card-body'><h5 class='card-title'>Sibelius Violin Concerto</h5>";
+$colAdd9 = "data-target='#collapseExample9'>";
 
+$info9 = "<div class='collapse' id='collapseExample9'>
+<div class='card card-body'>";
 
+$view8 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip8'></iframe></div><div class='card-body'>".  $collapse . $colAdd9 . "Brahms Violin Concerto in D</button>";
+
+$colAdd10 = "data-target='#collapseExample10'>";
+
+$info10 = "<div class='collapse' id='collapseExample10'>
+<div class='card card-body'>";
+
+$view9 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip7'></iframe></div><div class='card-body'>" .  $collapse . $colAdd10 . "Tchaikovsky Violin Concerto in D</button>";
+
+$colAdd11 = "data-target='#collapseExample11'>";
+
+$info11 = "<div class='collapse' id='collapseExample11'>
+<div class='card card-body'>";
+
+$view10 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip13'></iframe></div><div class='card-body'>" .  $collapse . $colAdd11 . "Sibelius Violin Concerto</button>";
 
 ?>
 
