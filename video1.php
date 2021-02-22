@@ -10,9 +10,10 @@ $id = 20;
 $stmt = $connection->prepare('SELECT * FROM musicians WHERE id = ?');
 $stmt->execute(array($id));
 $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
-?> <?php foreach($musicians as $musician): ?> 
+?> <?php foreach($musicians as $GLOBALS['musician']): ?> 
 
 <?php echo $info1 . $musician->concerto . "</div></div>"; ?>
+
  <?php echo $buttonPlace .
 "data-content= '$musician->info' title = '$musician->role'>$musician->name</button>";?> 
 <?php endforeach; ?> 

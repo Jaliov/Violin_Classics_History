@@ -10,8 +10,8 @@
 </head>
  <body style="background-image: url('ViolinImbBlurDark.jpg');">
  <!--<body class = "bg-secondary"> -->
-<div class = "container">
+<div class = "container container-fluid">
 
-<h1 class = "text-danger">Great Violinists!</h1>
+<h2 class = "text-danger">The Violin Concerto Through History</h2>
 
-<p class = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem explicabo quo quod architecto doloribus perferendis veritatis sed, labore culpa aperiam dolore, minima temporibus rem nesciunt officia quam maxime totam odio. </p>
+<p class = "text-light">Great violinists of various eras perform masterworks of the concerto repertoire displayed in chronological order from the 18th century through the 20th century and reprenting the Baroque, classical, late classical, romantic and late romantic eras in Western Music. </p>
