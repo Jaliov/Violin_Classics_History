@@ -23,7 +23,7 @@ $password = '5b0ff370';
 
 $options = [];
 
-$dbname = 'great_musicians';
+$dbname = 'heroku_f67f9289f8a7d06';
 
 $dsn = 'mysql:host='.$host . ';dbname=' . $dbname;
 
