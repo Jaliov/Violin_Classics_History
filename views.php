@@ -12,7 +12,7 @@ $info1 = "<div class='collapse' id='coll1'>
 
 $view1 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip14'></iframe></div><div class='card-body'>" . $collapse . $colAdd1 .
 "Vivaldi Violin Concerto in A minor <small> (audio only) </small>
-</button><br>";
+</button><br>" . $info1;
 
 $colAdd2 = "data-target='#coll2'>";
 
@@ -85,6 +85,8 @@ $info11 = "<div class='collapse' id='coll11'>
 <div class='card card-body'>";
 
 $view10 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip13'></iframe></div><div class='card-body'>" .  $collapse . $colAdd11 . "Sibelius Violin Concerto</button><br>";
+
+$view12 . $card . "<div class='card-body'><br>";
 
 ?>
 
