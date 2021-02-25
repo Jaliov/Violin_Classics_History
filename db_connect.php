@@ -23,7 +23,7 @@ $password = '5b0ff370';
 
 $options = [];
 
-$dbname = 'MYSQL_musicians';
+$dbname = 'great_musicians';
 
 $dsn = 'mysql:host='.$host . ';dbname=' . $dbname;
 
