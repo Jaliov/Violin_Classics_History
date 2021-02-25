@@ -1,18 +1,32 @@
 <?php
 
 //Set DSN (Data Source Name)
+//Local connection
+// $host = 'localhost';
 
-$host = 'localhost';
+// $username = 'root';
 
-$username = 'root';
+// $password = 'Ritter*1734!';
 
-$password = 'Ritter*1734!';
+// $options = [];
+
+// $dbname = 'great_musicians';
+
+// $dsn = 'mysql:host='.$host . ';dbname=' . $dbname;
+
+//Heroku connection
+$host = 'us-cdbr-east-03.cleardb.com';
+
+$username = 'b823ebdba10252';
+
+$password = '5b0ff370';
 
 $options = [];
 
-$dbname = 'great_musicians';
+$dbname = 'MYSQL_musicians';
 
 $dsn = 'mysql:host='.$host . ';dbname=' . $dbname;
+
 
 
 try{
@@ -20,7 +34,7 @@ try{
     echo "<p class ='text-secondary'>PDO</p>";
 
 } catch(PDOException $e) {
-    echo '<h3 class ="text-light">There was an unexpected error</h3>';
+    echo '<p class ="text-light">There was an unexpected error</p>';
 }
 
 
