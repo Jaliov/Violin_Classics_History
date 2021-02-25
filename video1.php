@@ -23,7 +23,7 @@ $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ); ?>
 
 <?php foreach($musicians as $musician): ?>
-<?php echo $buttonPlace . "data-content='$musician->info;' title = '$musician->role'>$musician->name</button>"; ?>
+<?php echo $buttonPlace . "data-content='$musician->info' title = '$musician->role'>$musician->name</button>"; ?>
 <?php endforeach; echo "</div></div><br>"; ?>
 
 <?php echo $view2; //Kyung Wha Chung Bach A minor:?>
@@ -146,7 +146,8 @@ data-content= '$musician->info' ?>$musician->name</button>"; ?>
 <?php endforeach; echo "</div></div><br>"; 
 ?>
 
-<?php echo $view6; //Paganini?>
+<?php echo $view6; ?>
+<!-- Paganini -->
 <?php $id = 11; $stmt;
 $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
@@ -154,7 +155,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 <?php foreach($musicians as $musician): ?>
 <?php echo $info7 . $musician->concerto .
 "</div></div>"; ?>
-<?php echo $buttonPlace . "data-content= '$musician->info'>$musician->name</button>";?>
+<?php echo $buttonPlace . "title = '$musician->role' data-content= '$musician->info'>$musician->name</button>";?>
 <?php endforeach; ?>
 
 <?php $id = 12; $stmt;
@@ -185,8 +186,8 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 ?>
 
 <?php foreach($musicians as $musician): ?>
-<?php echo $buttonPlace .
-"data-content= '$musician->info' ?>$musician->name</button>";?>
+<?php echo $buttonPlace . "title = '$musician->role'
+data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php endforeach; echo "</div></div><br>"; 
 ?>
 
@@ -214,14 +215,15 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 ?>
 
 <?php echo $view9; ?>
+<!--Heifetz Tchaikovsky-->
 <?php $id = 1; $stmt; $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $info10 . $musician->concerto .
     "</div></div>"; ?>
-<?php echo $buttonPlace .
-"data-content= '$musician->info;' ?>$musician->name</button>";?>
+<?php echo $buttonPlace . "title = '$musician->role'
+data-content= '$musician->info;' ?>$musician->name</button>";?>
 <?php endforeach; ?>
 
 <?php $id = 17; $stmt;

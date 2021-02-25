@@ -21,7 +21,7 @@ $info2 = "<div class='collapse' id='coll2'>
 
 $view2 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip1'></iframe></div><div class='card-body'>" .  $collapse . $colAdd2 .
 "Bach Violin Concerto in A minor</button><br>";
-// $info2;
+
 $colAdd3 = "data-target='#coll3'>";
 
 $info3 = "<div class='collapse' id='coll3'>
@@ -85,8 +85,6 @@ $info11 = "<div class='collapse' id='coll11'>
 <div class='card card-body'>";
 
 $view10 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip13'></iframe></div><div class='card-body'>" .  $collapse . $colAdd11 . "Sibelius Violin Concerto</button><br>";
-
-$view12 . $card . "<div class='card-body'><br>";
 
 ?>
 
