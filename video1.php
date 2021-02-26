@@ -165,7 +165,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $buttonPlace . "title = '$musician->role'
-data-content= '$paganini $musician->info' ?>$musician->name</button>";?>
+data-content= '$paganini $musician->info' ?>$musician->$paganini</button>";?>
 <?php endforeach; echo "</div></div><br>"; 
 
 ?>
