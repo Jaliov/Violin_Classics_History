@@ -3,7 +3,7 @@
 <?php require 'video_list.php'; ?>
 <?php require 'views.php'; ?>
 <?php require 'popover_script.php'; ?>
-
+<php $paganini = 'Niccolò Paganini'; ?>
 
 <?php echo $view1; #Henryk Szeryng?>
 <?php
@@ -155,7 +155,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 <?php foreach($musicians as $musician): ?>
 <?php echo $info7 . $musician->concerto .
 "</div></div>"; ?>
-<?php echo $buttonPlace . "title = '$musician->role' data-content= '$musician->info'>$musician->name</button>";?>
+<?php echo $buttonPlace . "title = '$musician->role' data-content= '$paganini_.   $musician->info'>$musician->name</button>";?>
 <?php endforeach; ?>
 
 <?php $id = 12; $stmt;
