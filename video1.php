@@ -243,8 +243,7 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php foreach($musicians as $musician): ?>
 <?php echo $info11 . $musician->concerto .
     "</div></div>"; ?>
-<?php echo  "<button type='button' class='btn btn-outline-info btn-light' data-toggle='popover' data-placement='top' data-trigger ='hover'
-  title = '$musician->role'
+<?php echo $buttonPlace . "title = '$musician->role'
 data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php endforeach; 
 ?>
@@ -254,17 +253,15 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php foreach($musicians as $musician): ?>
-<?php echo  "<button type='button' class='btn btn-outline-info btn-light' data-toggle='popover' data-placement='top' data-trigger ='hover'
-  title = '$musician->role'
-data-content= '$musician->info' ?>$musician->name</button>";?>
+<?php echo $buttonPlace . "title = '$musician->role'
+title = '$musician->role'
+data-content= '$musician->info' ?>$musician->name</button>"; ?>
 <?php endforeach; echo "</div></div><br>"; ?>
 
-<?php echo $view12; ?>
 </div>
 </div>
 </div>
 
-<!-- <?php include "footer.php"; ?> -->
 </body>
 
 </html>
