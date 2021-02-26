@@ -1,7 +1,7 @@
 <?php
 
-//Set DSN (Data Source Name)
-//Local connection
+// Set DSN (Data Source Name)
+// Local connection
 // $host = 'localhost';
 
 // $username = 'root';
