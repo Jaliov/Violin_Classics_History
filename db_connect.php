@@ -27,8 +27,6 @@ $dbname = 'heroku_f67f9289f8a7d06';
 
 $dsn = 'mysql:host='.$host . ';dbname=' . $dbname;
 
-
-
 try{
     $connection = new PDO($dsn, $username, $password, $options); 
     echo "<p class ='text-secondary'>PDO</p>";
