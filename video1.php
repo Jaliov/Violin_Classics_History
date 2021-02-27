@@ -3,6 +3,7 @@
 <?php require 'video_list.php'; ?>
 <?php require 'views.php'; ?>
 <?php require 'popover_script.php'; ?>
+<?php $GLOBALS['Perlman'] = "He played the solo violin passages in John Williams’s Oscar-winning score for the movie Schindler’s List (1993)."; ?>
 
 
 <?php echo $view1; #Henryk Szeryng?>
@@ -133,7 +134,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 "</div></div>"; ?>
 
 <?php echo $buttonPlace .  "title = '$musician->role'
-data-content= '$musician->info' >$musician->name</button>"; ?>
+data-content= '$musician->info''$Perlman'>$musician->name</button>"; ?>
 <?php endforeach; ?>
 
 <?php $id = 14; $stmt;
