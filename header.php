@@ -19,6 +19,6 @@
 
         <h2 class="text-danger">The Violin Concerto Through History</h2>
 
-        <p class="text-light">Great violinists of various eras perform masterworks of the concerto repertoire displayed
-            in chronological order from the 18th century through the 20th century and representing the Baroque,
-            classical, late classical, romantic and late romantic eras in Western Music. </p>
+        <p class="text-light">Great violinists of various eras, from the 1940's to the present, perform masterworks of the concerto repertoire (excerpts) displayed in chronological order from the 18th century through the 20th century and representing the Baroque, classical, late classical, romantic and late romantic eras in Western Music. </p>
+           
+           
