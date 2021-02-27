@@ -12,7 +12,10 @@ $stmt->execute(array($id));
 $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 <?php foreach($musicians as $musician): ?>
-<?php echo $musician->concerto . "</div></div>"; ?>
+  <?php echo $musician->concerto . "</div></div>"; ?>
+  <?php echo $buttonPlace .
+"data-content= '$musician->concerto' title = '$musician->role'>$musician->name</button>";?>
+
 
 <?php echo $buttonPlace .
 "data-content= '$musician->info' title = '$musician->role'>$musician->name</button>";?>
