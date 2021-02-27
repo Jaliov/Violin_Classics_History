@@ -3,8 +3,6 @@
 <?php require 'video_list.php'; ?>
 <?php require 'views.php'; ?>
 <?php require 'popover_script.php'; ?>
-<?php $GLOBALS['Perlman'] = "He played the solo violin passages in John Williams’s Oscar-winning score for the movie Schindler’s List (1993)."; ?>
-
 
 <?php echo $view1; #Henryk Szeryng?>
 <?php
@@ -128,13 +126,13 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 <!--Beethoven -->
 <?php $id = 13; $stmt;
 $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
-?>
+$perlman = "He played the solo violin passages in John Williams’s Oscar-winning score for the movie Schindler’s List (1993)."; ?>
 <?php foreach($musicians as $musician): ?>
 <?php echo $info6 . $musician->concerto .
 "</div></div>"; ?>
 
 <?php echo $buttonPlace .  "title = '$musician->role'
-data-content= '$musician->info''$Perlman'>$musician->name</button>"; ?>
+data-content= '$musician->info $perlman'>$musician->name</button>"; ?>
 <?php endforeach; ?>
 
 <?php $id = 14; $stmt;
