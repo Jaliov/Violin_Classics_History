@@ -15,15 +15,17 @@
 </head>
 
 <body style="background-image: url('ViolinImbBlurDarkText.jpg');">
+
     <!--<body class = "bg-secondary"> -->
     <div class="container container-fluid" >
         <div class="card text-center bg-light" id="header">
-
-            <div class="card-body">
-                <h4 class="card-header">The Violin Concerto Through the Centuries!</h4>
-                <p class="card-text">Great violinists (and one violist) from the 1940's to the present, perform masterworks of the
+        
+            <div class="card-body bg-secondary">
+            <img src = "violin.png" >
+                <h4 class="card-header rounded-top text-white" style="margin-top:.25rem; background-color:hsla(0, 75%, 70%, 0.6);">The Violin Concerto Through the Centuries!</h4>
+                <p class="card-text bg-light rounded-bottom">Great violinists (and one violist) from the 1940's to the present, perform masterworks of the
                 concerto repertoire presented as excerpts in chronological order from the 18th century through the
-                20th century and representing the Baroque, classical, late classical, romantic and late romantic
+                20th century and representing the Baroque, Classical, late Classical, Romantic and late Romantic
                 eras in Western music. </p>
             </div>
             <div class="card-footer text-muted">

@@ -260,6 +260,7 @@ data-content= '$musician->info' ?>$musician->name</button>"; ?>
 
 </div>
 </div>
+<div class = "text-light"><small>Icons made by <a href="https://www.freepik.com" title="Freepik" class="text-info">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"class="text-info">www.flaticon.com</a></small></div>
 </div>
 
 </body>
