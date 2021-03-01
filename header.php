@@ -10,15 +10,23 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Great Violinists History</title>
 </head>
 
 <body style="background-image: url('ViolinImbBlurDarkText.jpg');">
     <!--<body class = "bg-secondary"> -->
-    <div class="container container-fluid">
+    <div class="container container-fluid" >
+        <div class="card text-center bg-light" id="header">
 
-        <h2 class="text-danger">The Violin Concerto Through History</h2>
+            <div class="card-body">
+                <h4 class="card-header">The Violin Concerto Through the Centuries!</h4>
+                <p class="card-text">Great violinists (and one violist) from the 1940's to the present, perform masterworks of the
+                concerto repertoire presented as excerpts in chronological order from the 18th century through the
+                20th century and representing the Baroque, classical, late classical, romantic and late romantic
+                eras in Western music. </p>
+            </div>
+            <div class="card-footer text-muted">
 
-        <p class="text-light">Great violinists of various eras, from the 1940's to the present, perform masterworks of the concerto repertoire (excerpts) displayed in chronological order from the 18th century through the 20th century and representing the Baroque, classical, late classical, romantic and late romantic eras in Western Music. </p>
-           
-           
+            </div>
+        </div>

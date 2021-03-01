@@ -52,7 +52,7 @@ $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 <?php echo $info3 . $musician->concerto . "</div></div>"; ?>
 
 <?php echo $buttonPlace .
-"data-content= '$musician->info;' title = '$musician->role'>$musician->name</button>";?>
+"data-content= '$musician->info;' title = '$musician->role'>$musician->name</button>"; ?>
 <?php endforeach; ?>
 
 <?php  //Oistrakh

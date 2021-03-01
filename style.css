@@ -2,3 +2,8 @@
    /*background-color:rgb(184, 176, 176); */
  margin-bottom: 0.25em; 
 }
+
+#header {
+  margin-bottom: 25px;
+  box-shadow: 5px 10px hsla(0, 75%, 70%, 0.3);
+}
