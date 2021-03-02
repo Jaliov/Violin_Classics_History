@@ -14,7 +14,7 @@
     <title>Great Violinists History</title>
 </head>
 
-<body style="background-image: url('ViolinImbBlurDarkText.jpg');">
+<body style="background-image: url('violin_subtract.png');">
 
     <!--<body class = "bg-secondary"> -->
     <div class="container container-fluid" >
@@ -22,7 +22,7 @@
         
             <div class="card-body">
             <!-- <img src = "violin_brown_shadow.png" > -->
-                <h3 class="card-header rounded-top bg-transparent text-light" style="margin-top:.25rem;">The Violin Concerto Through the Ages!</h3>
+                <h3 class="card-header rounded-top bg-transparent text-danger" style="margin-top:.25rem;">The Violin Concerto Through the Ages!</h3>
                 <p class="card-text text-white bg-transparent rounded-bottom">Great violinists (and one violist) from the 1940's to the present, perform masterworks of the
                 concerto repertoire presented as excerpts in chronological order from the 18th century through the
                 20th century and representing the Baroque, Classical, late Classical, Romantic and late Romantic
