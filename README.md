@@ -16,4 +16,5 @@
  - MYSQL/PDO
  - JavaScript
  - CSS/Bootstrap
+ - GIMP Image Manipulaton Program
 
