@@ -18,3 +18,5 @@
  - CSS/Bootstrap
  - GIMP Image Manipulaton Program
 
+ ### Plan to add a form page in which vistors can submit comments/suggestions
+
