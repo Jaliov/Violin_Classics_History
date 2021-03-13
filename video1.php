@@ -219,8 +219,6 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php $id = 1; $stmt; $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
-<?php $heifetz_site_link = 'Heifetz fan page'; ?>
-
 <?php foreach($musicians as $musician): ?>
 <?php echo $info10 . $musician->concerto .
     "</div></div>"; ?>
@@ -234,11 +232,12 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $buttonPlace . "title = '$musician->role'
-data-content= '$musician->info' ?>$musician->name</button><a href='https://jaliov.github.io/react-heifetz/' target='_blank' role='button' aria-pressed='true' class='btn btn-outline-info btn-light' type='button' id='heifetz_link'>Check out my Heifetz tribute page here! </a>";?>
+data-content= '$musician->info' ?>$musician->name</button><a href='https://jaliov.github.io/react-heifetz/' target='_blank' role='button' aria-pressed='true' class='btn btn-outline-info btn-light' type='button' id='heifetz_link'>Check out my J.H. tribute page here!</a>";?>
 <?php endforeach; echo "</div></div><br>"; ?>
 
 
-<?php echo $view10; ?>
+<?php echo $view10; ?> 
+<!-- Ferras Sibelius -->
 <?php $id = 8; $stmt; $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
@@ -250,7 +249,7 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php endforeach; 
 ?>
 
-<?php $id = 18; $stmt;
+<?php $id = 18; $stmt; //Sibelius
 $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
