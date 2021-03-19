@@ -18,18 +18,16 @@
 </head>
 
 <body style="background-image: url('violin_subtract.png');">
-
-    <!--<body class = "bg-secondary"> -->
+<?php require 'navbar.php'; ?>
+<?php require 'db_connect.php'; ?>
     <div class="container container-fluid" >
+  
         <div class="card text-center bg-transparent" id="header" style = "margin-bottom:.5rem;">
         
             <div class="card-body">
             <!-- <img src = "violin_brown_shadow.png" > -->
                 <h2 class="card-header rounded-top bg-transparent text-danger" style="margin-top:.25rem;font-family: 'Marko One', serif;">The Violin Concerto Through the Ages!</h2>
-                <p class="card-text text-white bg-transparent rounded-bottom">Great violinists (and one violist) from the 1940's to the present, perform masterworks of the
-                concerto repertoire presented as excerpts in chronological order from the 18th century through the
-                20th century and representing the Baroque, Classical, late Classical, Romantic and late Romantic
-                eras in Western music. <br>Use the button links below for more info on the soloists and composers.</p>
+               
             </div>
             <!-- <div class="card-footer text-muted bg-light"> -->
             <div>

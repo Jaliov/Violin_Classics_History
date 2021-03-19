@@ -1,4 +1,4 @@
-<?php require 'db_connect.php'; ?>
+
 <?php include 'header.php'; ?>
 <?php require 'video_list.php'; ?>
 <?php require 'views.php'; ?>
