@@ -26,29 +26,20 @@ $stmt->execute( array( ':nameEntry'=>$name));
 
 <div class = "container">
 
-  
     <h2 class = 'text-light'>Enter Name</h2>
     
-    </div>
-
-   
-       
     <form method = 'POST' action = 'create.php'>
 
        <div class="form-group">
          
          <label for="name_entry">Name</label>
 
-         <input type="text" name = "name_entry" class="form-control">
+         <input type="text" name = "name_entry" class="form-control" placeholder = "Enter name">
 
          <!-- <label for="email">Email</label>
 
          <input type="email" id = "email" name = "email" class="form-control"> -->
 
-        </div>
-
-        <div class="form-group">
-        
         <button class ="btn btn-info" type = "submit">Enter Name</button>
         
         </div>
@@ -56,12 +47,7 @@ $stmt->execute( array( ':nameEntry'=>$name));
         </form>
 
         </div>
-
-       
-       </div>
-    
-    </form>
-    
-    </div>
+        </body>
+     
 
 <?php require 'footer.php' ?>
