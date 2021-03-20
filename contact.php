@@ -17,31 +17,24 @@ $name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
 $stmt = $connection->prepare($sql); 
 $stmt->execute( array( ':nameEntry'=>$name)); 
 
-?>
-
-
-<div class = "container">
+echo "<div class = 'container'>
 
     <h2 class = 'text-light'>Enter Name</h2>
     
-    <form method = 'POST' action = 'create.php'>
+    <form method = 'POST' action = 'contact.php'>
 
-       <div class="form-group">
+       <div class='form-group'>
          
-         <label for="name_entry">Name</label>
+         <label for='name_entry'>Name</label>
 
-         <input type="text" name = "name_entry" class="form-control" placeholder = "Enter name">
+         <input type='text' name = 'name_entry' class='form-control' placeholder = 'Enter name'>
 
-         <!-- <label for="email">Email</label>
-
-         <input type="email" id = "email" name = "email" class="form-control"> -->
-
-        <button class ="btn btn-info" type = "submit">Enter Name</button>
+                 <button class ='btn btn-info' type = 'submit'>Enter Name</button>
         
         </div>
 
         </form>
 
-        </div>
+        </div>" ?>
         
 <?php require 'footer.php' ?>
