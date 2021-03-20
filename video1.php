@@ -262,6 +262,3 @@ data-content= '$musician->info' ?>$musician->name</button>"; ?>
 </div>
 </div>
 
-</body>
-
-</html>

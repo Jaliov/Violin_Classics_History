@@ -1,9 +1,5 @@
 <?php 
-
 require 'header.php'; 
-
-require 'db_connect.php';
-
 $message = "<p class = 'text-light'>process failed</p>";
 
 //  if(isset ($_POST['name_entry'])) {
@@ -47,7 +43,5 @@ $stmt->execute( array( ':nameEntry'=>$name));
         </form>
 
         </div>
-        </body>
-     
-
+        
 <?php require 'footer.php' ?>
