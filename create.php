@@ -2,77 +2,54 @@
 
 require 'header.php'; 
 
-require 'db.php';
+require 'db_connect.php';
 
-$message = '';
+$message = "<p class = 'text-light'>process failed</p>";
 
-if(isset ($_POST['name']) && isset($_POST['email']) ) {
+//  if(isset ($_POST['name_entry'])) {
 
-    // echo 'submitted';
+//     // echo 'submitted';
     
-    $name = $_POST['name'];
-
-    $email = $_POST['email'];
-
-    $sql = 'INSERT INTO people(name, email) VALUES(:name, :email)';
-
-    $statement = $connection->prepare($sql);
-
-    if(
-
-    $statement->execute([':name' => $name, ':email' => $email])) 
-    {
-       $message = 'data inserted successfully';
-
-    }
     
-    }
 
+//     $email = $_POST['email'];
+
+$sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
+
+   //  $stmt= $pdo->prepare($sql);
+$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
+$stmt = $connection->prepare($sql); 
+$stmt->execute( array( ':nameEntry'=>$name)); 
 
 ?>
 
 
-
-
-
 <div class = "container">
 
-  <div class = "card mt-5"> <!--margin-top: 5 -->
-
-    <div class="card-header">
-
-    <h2>Create a person</h2>
+  
+    <h2 class = 'text-light'>Enter Name</h2>
     
     </div>
 
-    <div class="card-body">
-
-      <?php if(!empty($message)): ?>
-
-       <div class = "alert alert-success">
-
-        <?= $message; ?>  <!--shorter version of //?php echo $message-->
-       </div>
-
-       <?php endif; ?>
-    
-    <form method = "post">
+   
+       
+    <form method = 'POST' action = 'create.php'>
 
        <div class="form-group">
          
-         <label for="name">Name</label>
+         <label for="name_entry">Name</label>
 
-         <input type="text" id = "name" name = "name" class="form-control">
+         <input type="text" name = "name_entry" class="form-control">
 
-         <label for="email">Email</label>
+         <!-- <label for="email">Email</label>
 
-         <input type="email" id = "email" name = "email" class="form-control">
+         <input type="email" id = "email" name = "email" class="form-control"> -->
 
         </div>
 
         <div class="form-group">
         
-        <button class ="btn btn-info" type = "submit">Create a Person</button>
+        <button class ="btn btn-info" type = "submit">Enter Name</button>
         
         </div>
 
@@ -80,22 +57,10 @@ if(isset ($_POST['name']) && isset($_POST['email']) ) {
 
         </div>
 
-
-
-
-
-
-       
-       
-       
        
        </div>
     
-    
-    
-    
     </form>
-    
     
     </div>
 

@@ -13,7 +13,7 @@
       <li class="nav-item">
         <a class="nav-link text-light" href="about.php">About</a>
       <li class="nav-item">
-        <a class="nav-link text-light" href="index2.php">Contact</a>
+        <a class="nav-link text-light" href="create.php">Contact</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled text-light" href="#">Links</a>
