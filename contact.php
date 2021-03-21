@@ -2,10 +2,10 @@
 require 'header.php'; 
 $message = "<p class = 'text-light'>process failed</p>";
 
-$sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
+$sql = 'INSERT INTO users(name_entry) VALUES( :nameEntry )';
 
    //  $stmt= $pdo->prepare($sql);
-$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : $message;
+$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
 $statement = $connection->prepare($sql); 
 $statement->execute( array( ':nameEntry'=>$name)); 
 
@@ -28,5 +28,5 @@ echo "<div class = 'container'>
         </form>
 
         </div>" ?>
-        <h1 class = 'danger'>Test</h1>
+        
 <?php require 'footer.php' ?>
