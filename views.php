@@ -5,6 +5,7 @@
 <?php require 'HTML.php'; ?>
 
 <?php
+
 $colAdd1 = "data-target='#coll1'>";
 
 $info1 = "<div class='collapse' id='coll1'>

@@ -7,4 +7,7 @@ $buttonPlace = "<button type='button' class='btn btn-outline-info btn-light' dat
 
 $collapse = "<button class='btn btn-info' type='button' data-toggle='collapse'  aria-expanded='false'  aria-controls='collapseExample' id = 'btn-col'"; 
 
+$heading = "<p class = 'text-light'>Use the button links below for more info about the soloists, compositons and composers!</p>"
+
+
 ?>

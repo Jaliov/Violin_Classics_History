@@ -3,8 +3,10 @@
 <?php require 'video_list.php'; ?>
 <?php require 'views.php'; ?>
 <?php require 'popover_script.php'; ?>
+<?php require 'HTML.php'; ?>
 
-<?php echo $view1; #Henryk Szeryng?>
+<?php echo $heading; ?>
+<?php echo $view1; #Henryk Szeryng ?>
 <?php
 $id = 20; 
 $stmt = $connection->prepare('SELECT * FROM musicians WHERE id = ?'); 
