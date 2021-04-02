@@ -7,11 +7,10 @@
 
         <p class="card-text">Check out some of my other sites here:</p>
         <div class="btn-group-vertical"> 
-        <a href="https://boiling-beyond-86124.herokuapp.com/" class="btn btn-secondary">My Website Portfolio</a><br>
-        <a href="https://joelrudinart.com/" class="btn btn-dark">Artist Website</a><br>
-
-        <a href="https://lisabflamenco.com/index.html" class="btn btn-secondary">Lisa Botalico Flamenco!</a><br>
-        <a class="btn btn-dark" href="https://github.com/Jaliov/Code-Quiz-Viola">Viola Quiz!</a><br>
+        <a href="https://boiling-beyond-86124.herokuapp.com/" class="btn btn-secondary" target="_blank">My Website Portfolio</a><br>
+        <a href="https://joelrudinart.com/" class="btn btn-dark" target="_blank">Artist Website</a><br>
+        <a href="https://lisabflamenco.com/index.html" class="btn btn-secondary" target="_blank">Lisa Botalico Flamenco!</a><br>
+        <a class="btn btn-dark" href="https://frozen-beach-43331.herokuapp.com/" target="_blank">Viola Quiz!</a><br>
     </div> 
 </div>
 </div>
