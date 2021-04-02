@@ -26,7 +26,7 @@
         
             <div class="card-body">
             <!-- <img src = "violin_brown_shadow.png" > -->
-                <h2 class="card-header rounded-top bg-transparent text-danger" style="margin-top:.25rem;font-family: 'Marko One', serif;">The Violin Concerto Through the Ages!</h2>
+                <h2 class="card-header rounded-top bg-transparent text-danger" style="margin-top:.25rem;font-family: 'Marko One', serif;">The Violin Concerto Through the Ages!</h2><br>
                
             </div>
             <!-- <div class="card-footer text-muted bg-light"> -->

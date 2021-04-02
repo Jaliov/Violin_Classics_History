@@ -29,7 +29,7 @@ $dsn = 'mysql:host='.$host . ';dbname=' . $dbname;
 
 try{
     $connection = new PDO($dsn, $username, $password, $options); 
-    echo "<p class ='text-secondary'>pdo</p>";
+    echo "<small>pdo</small>";
 
 } catch(PDOException $e) {
     echo '<p class ="text-light">There was an unexpected error</p>';

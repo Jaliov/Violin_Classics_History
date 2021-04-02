@@ -57,14 +57,14 @@ echo "<div class = 'container'>
        
         <div class='form-group'>
           <label for='email'>Email address</label>
-          <input type='email' class='form-control' name ='email' placeholder='name@youremail.com'><span class = 'text-warning'>
+          <input type='email' class='form-control' name ='email' placeholder='name@youremail.---'><span class = 'text-warning'>
           $EmailError </span>
         </div>
         
         <div class='form-group'>
           <label for='comments'>Comments</label>
           <textarea class='form-control' name='comments' rows='3' placeholder='Violin stuff...'></textarea>
-        <button class ='btn btn-info' type = 'submit' name='submit'>Submit</button>
+        <button class ='btn btn-secondary' type = 'submit' name='submit'>Submit</button>
         <span class = 'text-secondary'>
         $SubmitConfirm </span>
         </div>
