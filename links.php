@@ -5,7 +5,7 @@
     <div class="card-body text-light text-center">
         <p class="card-title">I am a professional musician as well as aritst and web developer
 
-        <p class="card-text">Check out some of my other sites here:</p>
+        <p class="card-text">Check out some of my other sites here:</p><br>
         <div class="btn-group-vertical"> 
         <a href="https://boiling-beyond-86124.herokuapp.com/" class="btn btn-secondary" target="_blank">My Website Portfolio</a><br>
         <a href="https://joelrudinart.com/" class="btn btn-dark" target="_blank">Artist Website</a><br>

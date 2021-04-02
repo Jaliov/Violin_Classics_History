@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg text-light" style = "background-color: rgb(217, 83, 79, 0.3);"
 >
-  <a class="navbar-brand text-light" href='index.php'><span class ='text-danger'>Great Violinists Play the Classics!</span></a>
+  <a class="navbar-brand text-light" href='index.php'><span class ='text-danger'>Violin Classics!</span></a>
   <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
