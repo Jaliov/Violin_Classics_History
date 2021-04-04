@@ -7,11 +7,10 @@ $RegexEmail = "/[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9._-]{3,}[.]{1}[a-zA-Z0-9._-]{2,}/";
 $NameError="";
 $EmailError="";
 $SubmitConfirm ="";
-$error = "error";
 
 $sql = 'INSERT INTO users(name_entry, email, comments) VALUES( :nameEntry, :emailEntry, :textEntry )';
 
-$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : $error;
+$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
 
 if (isset($_POST['name_entry'])) {
   if(empty($_POST['name_entry'])) {
@@ -44,7 +43,7 @@ if(!preg_match($RegexEmail,$Email)) {
 $comments = isset($_POST['comments']) ? $_POST['comments'] : null;
 
 $statement = $connection->prepare($sql); 
-$statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments));
+$statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments)); 
 
 ?>
 <style>
@@ -62,7 +61,7 @@ $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textE
 
             <label for='name_entry'>Name</label>
 
-            <input type='text' name='name_entry' class='form-control' placeholder='Enter name' id='name_entry'><span
+            <input type='text' name='name_entry' class='form-control' placeholder='Enter name'><span
                 class='text-danger'>
                 <?php echo $NameError ?></span>
         </div>
