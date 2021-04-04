@@ -44,12 +44,6 @@ $statement = $connection->prepare($sql);
 $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments)); 
 
 echo "<div class = 'container'>
-<style>
-.form-control {
-    box-shadow: 5px 10px rgb(217, 83, 79, 0.3);
-}
-</style>
-
 
 <form method = 'POST' action = 'contact.php' class='text-light'>
         <p class='text-light'>Please submit any comments you care to share about this site, the violin and/or its
