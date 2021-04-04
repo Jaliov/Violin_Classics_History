@@ -1,6 +1,5 @@
 <?php 
 require 'header.php'; 
-
 $message = "<p class = 'text-light'>process failed</p>";
 $RegexName = "/^[A-Za-z. ]*$/";
 $RegexEmail = "/[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9._-]{3,}[.]{1}[a-zA-Z0-9._-]{2,}/";
@@ -38,14 +37,11 @@ if(!preg_match($RegexEmail,$Email)) {
   $SubmitConfirm= 'Submitted';
 }
 } 
-
 }
 $comments = isset($_POST['comments']) ? $_POST['comments'] : null;
 
 $statement = $connection->prepare($sql); 
 $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments)); 
-
-
 
 echo "<div class = 'container'>
 <style>
@@ -55,8 +51,7 @@ echo "<div class = 'container'>
 </style>
 
 
-
-    <form method='POST' action='contact.php' class='text-light' id='myForm'>
+<form method = 'POST' action = 'contact.php' class='text-light'>
         <p class='text-light'>Please submit any comments you care to share about this site, the violin and/or its
             repertoire below!</p>
         <div class='form-group'>
