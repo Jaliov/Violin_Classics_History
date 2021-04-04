@@ -45,14 +45,16 @@ $comments = isset($_POST['comments']) ? $_POST['comments'] : null;
 $statement = $connection->prepare($sql); 
 $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments)); 
 
-?>
+
+
+echo "<div class = 'container'>
 <style>
 .form-control {
     box-shadow: 5px 10px rgb(217, 83, 79, 0.3);
 }
 </style>
 
-<div class='container'>
+
 
     <form method='POST' action='contact.php' class='text-light' id='myForm'>
         <p class='text-light'>Please submit any comments you care to share about this site, the violin and/or its
@@ -63,25 +65,26 @@ $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textE
 
             <input type='text' name='name_entry' class='form-control' placeholder='Enter name'><span
                 class='text-danger'>
-                <?php echo $NameError ?></span>
+               $NameError </span>
         </div>
 
         <div class='form-group'>
             <label for='email'>Email address</label>
             <input type='email' class='form-control' name='email' placeholder='sample@email.com'><span
-                class='text-danger'>
-                <?php echo $EmailError ?></span>
-        </div>
+                class='text-danger'>$EmailError </span>
+                </div>
+               
 
         <div class='form-group'>
             <label for='comments'>Comments</label>
             <textarea class='form-control' name='comments' rows='3' placeholder='Violin stuff...'></textarea><br>
             <button class='btn btn-secondary' type='submit' name='submit'>Submit</button>
-            <span class='text-success' id='reset'><?php echo
-        $SubmitConfirm ?></span>
+            <span class='text-success' id='reset'>
+        $SubmitConfirm</span>
         </div>
     </form>
-</div>
+</div>" 
+?>
 
 <script>
 setTimeout(() => {
