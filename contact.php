@@ -44,42 +44,30 @@ $statement = $connection->prepare($sql);
 $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments)); 
 
 echo "<div class = 'container'>
-
-<form method = 'POST' action = 'contact.php' class='text-light'>
-        <p class='text-light'>Please submit any comments you care to share about this site, the violin and/or its
-            repertoire below!</p>
-        <div class='form-group'>
-
-            <label for='name_entry'>Name</label>
-
-            <input type='text' name='name_entry' class='form-control' placeholder='Enter name'><span
-                class='text-danger'>
-               $NameError </span>
+    <form method = 'POST' action = 'contact.php' class='text-light'>
+    <p class = 'text-light'>Please submit any comments you care to share about this site, the violin and/or its repertoire below!</p>
+       <div class='form-group'>
+         
+         <label for='name_entry'>Name</label>
+         <input type='text' name = 'name_entry' class='form-control' placeholder = 'Enter name'><span class = 'text-warning'>
+          $NameError </span>
         </div>
-
+       
         <div class='form-group'>
-            <label for='email'>Email address</label>
-            <input type='email' class='form-control' name='email' placeholder='sample@email.com'><span
-                class='text-danger'>$EmailError </span>
-                </div>
-               
-
-        <div class='form-group'>
-            <label for='comments'>Comments</label>
-            <textarea class='form-control' name='comments' rows='3' placeholder='Violin stuff...'></textarea><br>
-            <button class='btn btn-secondary' type='submit' name='submit'>Submit</button>
-            <span class='text-success' id='reset'>
-        $SubmitConfirm</span>
+          <label for='email'>Email address</label>
+          <input type='email' class='form-control' name ='email' placeholder='name@youremail.---'><span class = 'text-warning'>
+          $EmailError </span>
         </div>
-    </form>
-</div>" 
-?>
-
-<script>
-setTimeout(() => {
-    document.querySelector('#reset').innerHTML = ''
-}, 3000);
-
-</script>
+        
+        <div class='form-group'>
+          <label for='comments'>Comments</label>
+          <textarea class='form-control' name='comments' rows='3' placeholder='Violin stuff...'></textarea>
+        <button class ='btn btn-secondary' type = 'submit' name='submit'>Submit</button>
+        <span class = 'text-secondary'>
+        $SubmitConfirm </span>
+        </div>
+             
+        </form>
+        </div>" ?>
 
 <?php require 'footer.php' ?>
