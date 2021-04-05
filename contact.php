@@ -2,7 +2,7 @@
 require 'header.php'; 
 $message = "<p class = 'text-light'>process failed</p>";
 
-$sql = 'INSERT INTO users(name_entry) VALUES( :nameEntry )';
+$sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
 
    //  $stmt= $pdo->prepare($sql);
 $name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
