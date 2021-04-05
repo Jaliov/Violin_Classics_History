@@ -1,14 +1,22 @@
 <?php 
 require 'header.php'; 
- require 'video1.php'; 
+
 $message = "failed";
+try {
+$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
 
-// $sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
+   //  $stmt= $pdo->prepare($sql);
+$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
+$stmt = $connection->prepare($sql); 
+$stmt->execute( array( ':nameEntry'=>$name)); 
 
-//    //  $stmt= $pdo->prepare($sql);
-// $name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
-// $stmt = $connection->prepare($sql); 
-// $stmt->execute( array( ':nameEntry'=>$name)); 
+echo "New record created successfully";
+} catch(PDOException $e) {
+  echo $sql . "<br>" . $e->getMessage();
+}
+
+$connection = null;
 
 echo "<div class = 'container'>
     <h2 class = 'text-light'>Enter Name</h2>
@@ -25,3 +33,4 @@ echo "<div class = 'container'>
         </div>" ?>
         
 <?php require 'footer.php' ?>
+
