@@ -261,6 +261,12 @@ title = '$musician->role'
 data-content= '$musician->info' ?>$musician->name</button>"; ?>
 <?php endforeach; echo "</div></div><br>"; ?>
 
-</div>
+<?php $sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
+
+   //  $stmt= $pdo->prepare($sql);
+$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
+$stmt = $connection->prepare($sql); 
+$stmt->execute( array( ':nameEntry'=>$name)); 
+?>
 </div>
 

@@ -1,5 +1,6 @@
 <?php 
 require 'header.php'; 
+ require 'video1.php'; 
 $message = "failed";
 
 // $sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
