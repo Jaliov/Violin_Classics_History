@@ -1,47 +1,47 @@
 <?php 
 require 'header.php'; 
-// $message = "<p class = 'text-light'>process failed</p>";
-// $RegexName = "/^[A-Za-z. ]*$/";
-// $RegexEmail = "/[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9._-]{3,}[.]{1}[a-zA-Z0-9._-]{2,}/";
-// $NameError="";
-// $EmailError="";
-// $SubmitConfirm ="";
+$message = "<p class = 'text-light'>process failed</p>";
+$RegexName = "/^[A-Za-z. ]*$/";
+$RegexEmail = "/[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9._-]{3,}[.]{1}[a-zA-Z0-9._-]{2,}/";
+$NameError="";
+$EmailError="";
+$SubmitConfirm ="";
 
-// $sql = 'INSERT INTO users(name_entry, email, comments) VALUES( :nameEntry, :emailEntry, :textEntry )';
+$sql = 'INSERT INTO users(name_entry, email, comments) VALUES( :nameEntry, :emailEntry, :textEntry )';
 
-// $name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
+$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
 
-// if (isset($_POST['name_entry'])) {
-//   if(empty($_POST['name_entry'])) {
-//     $NameError='Please submit a name!';
-// }
-// else {
-//   $_POST['name_entry'];
-// if(!preg_match($RegexName, $name)) {
-// $NameError ="Only Letters and spaces please";
-// }
-// }
-// } 
+if (isset($_POST['name_entry'])) {
+  if(empty($_POST['name_entry'])) {
+    $NameError='Please submit a name!';
+}
+else {
+  $_POST['name_entry'];
+if(!preg_match($RegexName, $name)) {
+$NameError ="Only Letters and spaces please";
+}
+}
+} 
 
-// $Email = isset($_POST['email']) ? $_POST['email'] : null;
+$Email = isset($_POST['email']) ? $_POST['email'] : null;
 
-// if(isset($_POST['email'])) {
-//   if(empty($_POST['email'])) {
-//   $EmailError='Please submit your email';
-// }
-// else {
-//   $_POST['email']; 
-// if(!preg_match($RegexEmail,$Email)) {
-//   $EmailError = "Not valid email format";
-// } else {
-//   $SubmitConfirm= 'Submitted';
-// }
-// } 
-// }
-// $comments = isset($_POST['comments']) ? $_POST['comments'] : null;
+if(isset($_POST['email'])) {
+  if(empty($_POST['email'])) {
+  $EmailError='Please submit your email';
+}
+else {
+  $_POST['email']; 
+if(!preg_match($RegexEmail,$Email)) {
+  $EmailError = "Not valid email format";
+} else {
+  $SubmitConfirm= 'Submitted';
+} 
+}
+}
+$comments = isset($_POST['comments']) ? $_POST['comments'] : null;
 
-// $statement = $connection->prepare($sql); 
-// $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments)); 
+$statement = $connection->prepare($sql); 
+$statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textEntry'=>$comments)); 
 
  echo "<div class = 'container'>
     <form method = 'POST' action = 'contact.php' class='text-light'>
