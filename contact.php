@@ -1,13 +1,13 @@
 <?php 
 require 'header.php'; 
-$message = "<p class = 'text-light'>process failed</p>";
+$message = "failed";
 
-$sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
+// $sql = 'INSERT INTO musicians(name_entry) VALUES( :nameEntry )';
 
-   //  $stmt= $pdo->prepare($sql);
-$name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
-$statement = $connection->prepare($sql); 
-$statement->execute( array( ':nameEntry'=>$name)); 
+//    //  $stmt= $pdo->prepare($sql);
+// $name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
+// $stmt = $connection->prepare($sql); 
+// $stmt->execute( array( ':nameEntry'=>$name)); 
 
 echo "<div class = 'container'>
     <h2 class = 'text-light'>Enter Name</h2>
