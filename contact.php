@@ -14,8 +14,7 @@ $name = isset($_POST['name_entry']) ? $_POST['name_entry'] : null;
 if (isset($_POST['name_entry'])) {
   if(empty($_POST['name_entry'])) {
     $NameError='Please submit a name!';
-}
-else {
+}else {
   $_POST['name_entry'];
 if(!preg_match($RegexName, $name)) {
 $NameError ="Only Letters and spaces please";
@@ -62,7 +61,7 @@ $statement->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$Email, ':textE
         <div class='form-group'>
           <label for='comments'>Comments</label>
           <textarea class='form-control' name='comments' rows='3' placeholder='Violin stuff...'></textarea>
-        <button class ='btn btn-info' type = 'submit' name='submit'>Submit</button>
+        <button class ='btn btn-secondary' type = 'submit' name='submit'>Submit</button>
         <span class = 'text-secondary'>
         $SubmitConfirm </span>
         </div>
