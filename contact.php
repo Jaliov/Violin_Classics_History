@@ -28,13 +28,14 @@ $stmt->execute( array( ':nameEntry'=>$name,  ':emailEntry'=>$email, ':textEntry'
   echo $sql . "<br>" . $e->getMessage();
 }
 $connection = null;
-$data = $_POST;
 
+$data = $_POST;
 if (!empty($data['name_entry']) &&
     !empty($data['email']) &&
     !empty($data['comments'])) {
     $formSubmit = 'submitted';
     }
+   
 echo "<div class = 'container'>
 <style> input, #textArea {
   box-shadow: 5px 10px rgb(217, 83, 79, 0.3)} </style>   
@@ -55,6 +56,11 @@ echo "<div class = 'container'>
                <button class ='btn btn-secondary' type = 'submit' name='submit'>Submit</button>
                
         </form>
+        <script>
+        setTimeout(() => {
+            document.querySelector('#reset').innerHTML = ''
+        }, 3000);
+        </script>
         </div>" ?>
 
 <?php require 'footer.php' ?>
