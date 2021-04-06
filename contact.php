@@ -40,12 +40,12 @@ if (!empty($data['name_entry']) &&
     !empty($data['comments'])) {
     $formSubmit = 'submitted';
     } else {
-      echo "Please fill out all fields";
+      $formSubmit = 'please fill out all fields';
     }
    
 echo "<div class = 'container'>
     <form method = 'POST' action = 'contact.php'>
-   <span class = 'text-success' id='reset'>$formSubmit</submit>
+   <span class = 'text-danger' id='reset'>$formSubmit</submit>
     </div>
          <label for='name_entry' class ='text-light'><small>Name</small></label>
          <input type='text' name = 'name_entry' class='form-control' placeholder = 'Enter name'><span class = 'text-danger'>
@@ -57,7 +57,7 @@ echo "<div class = 'container'>
                
                <div class='form-group'>
                  <label for='comments' class ='text-light'><small>Comments</small></label>
-                 <textarea class='form-control' name='comments' rows='3' placeholder='Violin stuff...' id='textArea'></textarea><br>
+                 <textarea class='form-control' name='comments' rows='3' placeholder='Violinist comments...' id='textArea'></textarea><br>
                <button class ='btn btn-secondary' type = 'submit' name='submit'>Submit</button>
                
         </form>
