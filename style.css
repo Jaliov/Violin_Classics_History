@@ -7,19 +7,33 @@
   margin-left: .25rem;
 }
 
-.navbar {
-  background-color: rgb(217, 83, 79, 0.3);
+.alert, .card, .navbar {
+  background-color: rgb(217, 83, 79, 0.2);
 }
 
-.card  {
-  box-shadow: 5px 10px rgb(217, 83, 79, 0.3);
+ .card-header {
+  margin-bottom: 20px;
+  font-family: 'Marko One', serif;
 }
 
-#header {
-  margin-bottom: 25px;
-  box-shadow: 0px 0px rgb(217, 83, 79, 0.3);
+.navbar-brand {
+  font-family: 'Marko One', serif;
+  padding-bottom: -0.1rem;
 }
-p {
+#textArea, .alert, .card, .form-control  {
+  box-shadow: 5px 10px rgb(217, 83, 79, 0.3)
+}   
+
+#alertFormat {
+  padding: 10px;
+  list-style: none;
+}
+
+.nav-item {
+  padding-right: 0.2rem;
+}
+
+p, li {
   font-size: 1.2em;
 }
 

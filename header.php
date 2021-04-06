@@ -22,12 +22,11 @@
 <?php require 'db_connect.php'; ?>
     <div class="container container-fluid" >
   
-        <div class="card text-center bg-transparent" id="header" style = "margin-bottom:.5rem;">
+        <div class="card text-center bg-transparent" style = "box-shadow: 0px 0px">
         
             <div class="card-body">
             <!-- <img src = "violin_brown_shadow.png" > -->
-                <h2 class="card-header rounded-top bg-transparent text-danger" style="font-family: 'Marko One', serif;">Violin Classics!</h2><br>
-               
+                <h2 class="card-header rounded-top bg-transparent text-danger id="header">Violin Classics!</h2>
             </div>
             <!-- <div class="card-footer text-muted bg-light"> -->
             <div>

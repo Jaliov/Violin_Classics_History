@@ -1,7 +1,12 @@
 
 <?php 
 
-require 'header.php'; 
+require 'header.php'; ?>
+<style>
+<?php include 'style.css'; ?>
+</style>
+
+<?php
 $NameError="";
 $message = "failed";
 $formSubmit = "";
@@ -34,11 +39,11 @@ if (!empty($data['name_entry']) &&
     !empty($data['email']) &&
     !empty($data['comments'])) {
     $formSubmit = 'submitted';
+    } else {
+      echo "Please fill out all fields";
     }
    
 echo "<div class = 'container'>
-<style> input, #textArea {
-  box-shadow: 5px 10px rgb(217, 83, 79, 0.3)} </style>   
     <form method = 'POST' action = 'contact.php'>
    <span class = 'text-success' id='reset'>$formSubmit</submit>
     </div>
