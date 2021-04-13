@@ -20,7 +20,7 @@
   font-family: 'Marko One', serif;
   padding-bottom: -0.1rem;
 }
-#textArea, .alert, .card, .form-control  {
+.alert, .card, .form-control  {
   box-shadow: 5px 10px rgb(217, 83, 79, 0.3)
 }   
 
