@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+<?php require 'header-min.php'; ?>
 
 <div class="card text-danger" style="background-color: rgb(217, 83, 79, 0.2);">
     <!-- <h5 class="card-header">Additional</h5> -->
