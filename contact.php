@@ -58,7 +58,7 @@ echo "<div class = 'container'>
                <div class='form-group'>
                  <label for='comments' class ='text-light'><small>Comments</small></label>
                  <textarea class='form-control' name='comments' rows='3' placeholder='Violinistic comments...'></textarea><br>
-               <button class ='btn btn-secondary' type = 'submit' name='submit'>Submit</button>
+               <button class ='btn btn-dark' type = 'submit' name='submit'>Submit</button>
                
         </form>
         <script>
