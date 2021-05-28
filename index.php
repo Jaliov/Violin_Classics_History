@@ -1,4 +1,4 @@
-<?php require 'video1.php' ?>
+<?php require 'video1-min.php' ?>
 
 <?php require 'footer.php' ?>
 

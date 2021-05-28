@@ -1,5 +1,5 @@
 
-<?php include 'header.php'; ?>
+<?php include 'header-min.php'; ?>
 <?php require 'video_list.php'; ?>
 <?php require 'views.php'; ?>
 <?php require 'popover_script.php'; ?>

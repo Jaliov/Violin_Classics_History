@@ -1,9 +1,9 @@
 
 <?php 
 
-require 'header.php'; ?>
+require 'header-min.php'; ?>
 <style>
-<?php include 'style.css'; ?>
+<?php include 'style-min.css'; ?>
 </style>
 
 <?php

@@ -1,7 +1,7 @@
 
-<?php require 'header.php'; ?>
+<?php require 'header-min.php'; ?>
 <style>
-<?php include 'style.css'; ?>
+<?php include 'style-min.css'; ?>
 </style>
                 <div class="alert text-light rounded-bottom" id="alertFormat">
                 <ul>
