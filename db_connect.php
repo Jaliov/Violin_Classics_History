@@ -35,5 +35,4 @@ try{
     echo '<p class ="text-light">There was an unexpected error</p>';
 }
 
-
 ?>

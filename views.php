@@ -12,7 +12,7 @@ $colAdd1 = "data-target='#coll1'>";
 $info1 = "<div class='collapse' id='coll1'>
 <div class='card card-body text-light' style='box-shadow:0 0;'>";
 
-$view1 = $card . "<iframe id ='player' class='embed-responsive-item' src='$clip14' allowfullscreen></iframe></div><div class='card-body'>" . $collapse . $colAdd1 .
+$view1 = $card . "<iframe id ='player' src='$clip14' allowfullscreen></iframe></div><div class='card-body'>" . $collapse . $colAdd1 .
 "Vivaldi Violin Concerto in A minor <small> (audio only) </small>
 </button><br>" . $info1;
 
