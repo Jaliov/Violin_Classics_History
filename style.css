@@ -10,9 +10,10 @@
   background-color: rgb(217, 83, 79, 0.2);
 }
 
- .card-header {
-  margin-bottom: 20px;
+ #header {
+  /* margin-bottom: 30px; */
   font-family: 'Marko One', serif;
+  margin-bottom: 20px;
 }
 
 .navbar-brand {
