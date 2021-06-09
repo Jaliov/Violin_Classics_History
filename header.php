@@ -20,9 +20,7 @@
     }
 
     .carousel-item {
-
         opacity: 0.2;
-
         transition: opacity ease-out 1.0s;
         /*opacity */
     }
@@ -57,17 +55,14 @@
             <div class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./musicianimages/Vivaldi.jpg" alt="First slide">
+                        <img src="./musicianimages/Vivaldi.jpg" alt="Vivaldi">
                     </div>
                     <div class="carousel-item">
                         <img src="./musicianimages/u-g-PNSWF90.jpg" alt="Beethoven">
-
                     </div>
                     <div class="carousel-item">
-                        <img src="./musicianimages/images.jpg" alt="Third slide">
-
+                        <img src="./musicianimages/images.jpg" alt="Tchaikovsky">
                     </div>
-
                     <div class="carousel-item">
                         <img src="musicianImages/799px-Wolfgang-amadeus-mozart_1.jpg" alt="Mozart">
                     </div>
@@ -77,4 +72,5 @@
                 </div>
             </div>
         </div>
+      
         <!-- <div class="card-footer text-muted bg-light"> -->
