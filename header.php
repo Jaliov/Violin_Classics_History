@@ -55,16 +55,16 @@
             <div class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./musicianimages/Vivaldi.jpg" alt="Vivaldi">
+                        <img src="./musicianImages/Vivaldi.jpg" alt="Vivaldi">
                     </div>
                     <div class="carousel-item">
-                        <img src="./musicianimages/u-g-PNSWF90.jpg" alt="Beethoven">
+                        <img src="./musicianImages/u-g-PNSWF90.jpg" alt="Beethoven">
                     </div>
                     <div class="carousel-item">
-                        <img src="./musicianimages/images.jpg" alt="Tchaikovsky">
+                        <img src="./musicianImages/Tchaikovsky.jpg" alt="Tchaikovsky">
                     </div>
                     <div class="carousel-item">
-                        <img src="musicianImages/799px-Wolfgang-amadeus-mozart_1.jpg" alt="Mozart">
+                        <img src="musicianImages/Mozart.jpg" alt="Mozart">
                     </div>
                     <div class="carousel-item">
                         <img src="musicianImages/Paganini.jpg" alt="Paganini">
