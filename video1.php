@@ -1,10 +1,12 @@
 
 <?php include 'header-min.php'; ?>
+<?php include 'carousel-min.php'; ?>
 <?php require 'video_list.php'; ?>
 <?php require 'views.php'; ?>
 <?php require 'popover_script.php'; ?>
 <?php require 'HTML.php'; ?>
 
+      
 <?php echo $heading; ?>
 <?php echo $view1; #Henryk Szeryng ?>
 <?php
