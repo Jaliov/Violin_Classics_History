@@ -1,28 +1,10 @@
+
 <style>
-    .carousel-inner>.carousel-item>img {
-        width: auto;
-        height: 300px !important;
-    }
-
-    .carousel-item {
-        opacity: 0.2;
-        transition: opacity ease-out 1.0s;
-        /*opacity */
-    }
-
-    .carousel.carousel-fade .carousel-item.active {
-        margin-bottom: 50px;
-        opacity: 1 !important;
-    }
-
-    .card-body {
-        font-family: 'Marko One', serif;
-        margin-bottom: 30px;
-        height: 4em;
-    }
-    </style>
+<?php include 'carousel-min.css'; ?>
+</style>   
 
 <div class="carousel slide carousel-fade" data-ride="carousel">
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./musicianImages/Vivaldi.jpg" alt="Vivaldi">

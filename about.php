@@ -1,10 +1,10 @@
-
-<?php require 'header-min.php'; ?>
 <style>
 <?php include 'style-min.css'; ?>
 </style>
-                <div class="alert text-light rounded-bottom" id="alertFormat">
-                <ul>
+
+<?php require 'header-min.php'; ?>
+                <div class="alert text-light rounded-bottom" >
+                <ul id="alertFormat">
                 <li>Violin virtuosos (and one violist) from the 1940's to the present, perform masterworks of the
                 concerto repertoire with world's great orchestras and conductors</li><br>
                 <li>Presented as excerpts in chronological order from the 18th century through the

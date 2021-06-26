@@ -10,25 +10,23 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-min.css">
-    
+
     <title>Great Violinists History</title>
 </head>
 
-<body style="background-image: url('violin_subtract.png');">
+<body>
     <?php require 'navbar.php'; ?>
     <?php require 'db_connect.php'; ?>
 
     <div class="container container-fluid">
 
-    <div class="card text-center bg-transparent" style="box-shadow: 0px 0px">
+        <div class="card text-center bg-transparent" style="box-shadow: 0px 0px">
 
-<div class="card-body">
-    <!-- <img src = "violin_brown_shadow.png" > -->
-    <h2 class="card-header rounded-top bg-transparent text-danger id=" header">Violin Classics!</h2>
-</div>
+            <div class="card-body">
+                <!-- <img src = "violin_brown_shadow.png" > -->
+                <h2 class="card-header rounded-top bg-transparent text-danger" id="header">Violin Classics!</h2>
+            </div>
 
-         
-        <!-- <div class="card-footer text-muted bg-light"> -->
+
+            <!-- <div class="card-footer text-muted bg-light"> -->

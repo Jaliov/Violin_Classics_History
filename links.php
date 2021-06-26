@@ -1,8 +1,11 @@
 <?php require 'header-min.php'; ?>
+<style>
+<?php include 'style-min.css'; ?>
+</style>
 
-<div class="card text-danger" style="background-color: rgb(217, 83, 79, 0.2);">
+<div class="card text-danger bg-transparent">
     <!-- <h5 class="card-header">Additional</h5> -->
-    <div class="card-body text-light text-center">
+    <div class="card-body text-light text-center" style="padding:2px";>
         <p class="card-title">I am a professional musician as well as aritst and web developer
 
         <p class="card-text">Check out some of my other sites here:</p><br>
