@@ -21,7 +21,7 @@
 
     <div class="container container-fluid">
 
-        <div class="card text-center bg-transparent" style="box-shadow: 0px 0px">
+        <div class="card text-center bg-transparent">
 
             <div class="card-body">
                 <!-- <img src = "violin_brown_shadow.png" > -->
