@@ -12,10 +12,11 @@ body {
  
  .btn-col {
   box-shadow: 0px 0px;
+  height: 50em;
  }
- #heifetz_link {
-   margin-left: .25rem;
- }
+ /* #heifetz_link {
+   height: 50%;
+ } */
 
  .card-body {
    height: 80px;
@@ -58,7 +59,9 @@ body {
 
  .cardSpacing {
   box-shadow: 0px 0px;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 100%;
  }
 
 .btn-list {
@@ -72,11 +75,9 @@ body {
   margin-bottom: 0.5rem;
 }
 
-iframe {
-  border-bottom: 5px solid white;
+#player {
+  border: 5px dotted white;
 }
-
-
 
 
  

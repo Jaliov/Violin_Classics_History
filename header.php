@@ -20,7 +20,6 @@
     <?php require 'db_connect.php'; ?>
 
     <div class="container container-fluid">
-        <div class = "img-"
         <div class="card text-center bg-transparent">
 
             <div class="card-body">
