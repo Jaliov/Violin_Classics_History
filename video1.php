@@ -15,10 +15,10 @@ $stmt->execute(array($id));
 $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 <?php foreach($musicians as $musician): ?>
-<?php echo $musician->concerto . "</div></div>"; ?>
+<?php echo $musician->concerto . "</span></div></div>"; ?>
 
 <?php echo $buttonPlace .
-"data-content= '$musician->info' title = '$musician->role'>$musician->name</button>";?>
+"data-content= '$musician->info' title = '$musician->role' >$musician->name</button>";?>
 <?php endforeach; ?>
 
 <?php $id = 19; $stmt; #Antonio Vivaldi
@@ -34,7 +34,7 @@ $id = 2; $stmt; $stmt->execute(array($id));
 $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 <?php foreach($musicians as $musician): ?>
-<?php echo $info2 . $musician->concerto . "</div></div>"; ?>
+<?php echo $info2 . $musician->concerto . "</span></div></div>"; ?>
 
 <?php echo $buttonPlace .
 "data-content= '$musician->info' title = '$musician->role'>$musician->name</button>"; ?>
@@ -52,7 +52,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 <?php foreach($musicians as $musician): ?>
-<?php echo $info3 . $musician->concerto . "</div></div>"; ?>
+<?php echo $info3 . $musician->concerto . "</span></div></div>"; ?>
 
 <?php echo $buttonPlace .
 "data-content= '$musician->info;' title = '$musician->role'>$musician->name</button>"; ?>
@@ -79,7 +79,7 @@ $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 <?php foreach($musicians as $musician): ?>
-<?php echo $info4 . $musician->concerto . "</div></div>"; ?>
+<?php echo $info4 . $musician->concerto . "</span></div></div>"; ?>
 <?php echo $buttonPlace .
 "data-content= '$musician->info' title = '$musician->role'>$musician->name</button>"; ?>
 <?php endforeach; ?>
@@ -99,7 +99,7 @@ $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $info5 . $musician->concerto .
-"</div></div>"; ?>
+"</span></div></div>"; ?>
 
 <?php echo $buttonPlace .
 "data-content= '$musician->info;' title = '$musician->role'>$musician->name</button>";?>
@@ -132,7 +132,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 $perlman = "He played the solo violin passages in John Williams’s Oscar-winning score for the movie Schindler’s List (1993)."; ?>
 <?php foreach($musicians as $musician): ?>
 <?php echo $info6 . $musician->concerto .
-"</div></div>"; ?>
+"</span></div></div>"; ?>
 
 <?php echo $buttonPlace .  "title = '$musician->role'
 data-content= '$musician->info $perlman'>$musician->name</button>"; ?>
@@ -157,7 +157,7 @@ $paganini = 'Niccolò Paganini'; ?>
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $info7 . $musician->concerto .
-"</div></div>"; ?>
+"</span></div></div>"; ?>
 <?php echo $buttonPlace . "title = '$musician->role' data-content=   '$musician->info'>$musician->name</button>"; ?>
 <?php endforeach; ?>
 
@@ -179,7 +179,7 @@ data-content= '$paganini $musician->info' ?>$paganini</button>";?>
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $info8 . $musician->concerto .
-    "</div></div>"; ?>
+    "</span></div></div>"; ?>
 <?php echo $buttonPlace .
 "data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php endforeach;
@@ -202,7 +202,7 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $info9 . $musician->concerto .
-    "</div></div>"; ?>
+    "</span></div></div>"; ?>
 <?php echo $buttonPlace .
  "title = '$musician->role'
  data-content= '$musician->info' >$musician->name</button>"; ?>
@@ -224,7 +224,7 @@ data-content= '$musician->info' ?>$musician->name</button>";?>
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $info10 . $musician->concerto .
-    "</div></div>"; ?>
+    "</span></div></div>"; ?>
 <?php echo $buttonPlace . "title = '$musician->role'
 data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php endforeach; ?>
@@ -235,7 +235,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $buttonPlace . "title = '$musician->role'
-data-content= '$musician->info' ?>$musician->name</button><br/><a class = 'btn btn-outline-danger btn-light text-light' href='https://jaliov.github.io/react-heifetz/' target='_blank' type='button' aria-pressed='true' id='heifetz_link'>Check out my J.H. tribute page here!</a>";?>
+data-content= '$musician->info' ?>$musician->name</button><br/><a class = 'btn btn-outline-danger btn-sm text-light' href='https://jaliov.github.io/react-heifetz/' target='_blank'   id='heifetz_link'>Check out my Heifetz tribute page here!</a>";?>
 <?php endforeach; echo "</div></div><br>"; ?>
 
 
@@ -246,7 +246,7 @@ data-content= '$musician->info' ?>$musician->name</button><br/><a class = 'btn b
 
 <?php foreach($musicians as $musician): ?>
 <?php echo $info11 . $musician->concerto .
-    "</div></div>"; ?>
+    "</span></div></div>"; ?>
 <?php echo $buttonPlace . "title = '$musician->role'
 data-content= '$musician->info' ?>$musician->name</button>";?>
 <?php endforeach; 

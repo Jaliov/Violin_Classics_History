@@ -10,17 +10,31 @@ body {
   background-color: rgb(66, 9, 7, 0.3);
 }
  
- .btn-col {
-  box-shadow: 0px 0px;
-  height: 50em;
+ .collapse {
+  position: absolute; 
+  z-index: 1; 
+ } 
+#heifetz_link {
+   margin-top: .5em;
+ } 
+ 
+ #navbarNav {
+  position: relative;
+  height: 1rem;
+  padding-bottom: 0;
+  background: transparent;
  }
- /* #heifetz_link {
-   height: 50%;
- } */
 
- .card-body {
-   height: 80px;
+ .card-body span {
+  background-color: rgba(46, 43, 43);
+  padding: 1rem;
+  box-shadow: 5px 15px 5px rgb(217, 83, 79, 0.6);
  }
+
+/* #coll2, #coll4 {
+   height: 80px; 
+   background-color: rgba(46, 43, 43);
+ } */
 
 .navbar {
    background-color: rgb(217, 83, 79, 0.2);
@@ -77,6 +91,15 @@ body {
 
 #player {
   border: 5px dotted white;
+}
+
+.popover-body{
+  background-color: rgba(46, 43, 43) !important;
+  color: whitesmoke !important;
+  /* font-size: 16px !important; */
+  max-width: 600px !important;
+  box-shadow: 5px 15px 5px rgb(217, 83, 79, 0.6);
+    
 }
 
 
