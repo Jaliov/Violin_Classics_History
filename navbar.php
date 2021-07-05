@@ -19,6 +19,5 @@
         <a class="nav-link disabled text-light" href="links.php">Info/Links</a>
       </li>
     </ul>
-
   </div>
 </nav>

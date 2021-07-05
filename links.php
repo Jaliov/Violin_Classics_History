@@ -1,14 +1,15 @@
+
 <?php require 'header-min.php'; ?>
-<!-- <style>
+<style>
 <?php include 'style-min.css'; ?>
-</style> -->
-<div class = "container">
+</style>
+
 <div class="card text-danger bg-transparent">
     <!-- <h5 class="card-header">Additional</h5> -->
     <div class="card-body text-light text-center">
         <div class ="card-title">I am a musician, artist and web developer</div>
 
-        <div class="card-text btn-list">Check out a few other my other sites here:</div><br>
+        <div class="card-text btn-list">Check out a few of my other sites here:</div><br>
         <div class="text-center"> 
             <a href="https://boiling-beyond-86124.herokuapp.com/" class="btn btn-outline-danger btn-light' btn-list" target="_blank">Website
                 Portfolio</a><br>
@@ -20,4 +21,4 @@
         </div>
     </div>
 </div>
-</div>
+<?php require 'footer.php'; ?>

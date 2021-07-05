@@ -47,16 +47,16 @@ echo "<div class = 'container'>
     <form method = 'POST' action = 'contact.php'>
    <span class = 'text-danger' id='reset'>$formSubmit</submit>
     </div>
-         <label for='name_entry' class ='text-light'><small>Name</small></label>
+         <label for='name_entry' class ='text-light'>Name</label>
          <input type='text' name = 'name_entry' class='form-control' placeholder = 'Enter name'><span class = 'text-danger'>
          $NameError </span>
                  <div class='form-group'>
-                 <label for='email' class ='text-light'><small>Email</small></label>
-                 <input type='email' class='form-control' name ='email' placeholder='name@sampleEmail.com'> 
+                 <label for='email' class ='text-light'>Email</label>
+                 <input type='email' class='form-control' name ='email' placeholder='name@youremail.tldomain'> 
                </div>
                
                <div class='form-group'>
-                 <label for='comments' class ='text-light'><small>Comments</small></label>
+                 <label for='comments' class ='text-light'>Comments</label>
                  <textarea class='form-control' name='comments' rows='3' placeholder='Violinistic comments...'></textarea><br>
                <button class ='btn btn-dark' type = 'submit' name='submit'>Submit</button>
                

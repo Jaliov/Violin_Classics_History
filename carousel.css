@@ -1,5 +1,7 @@
-carousel {
+.carousel {
     display: flex; 
+    margin-top: 2em;
+    margin-bottom: 2em; 
 }
 
 
@@ -19,12 +21,12 @@ carousel {
 }
 
 .carousel.carousel-fade .carousel-item.active {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     opacity: 1 !important;
 }
 
 .card-body {
     /* font-family: 'Marko One', serif; */
-    margin-bottom: 30px;
+
     height: 4em;
 }
