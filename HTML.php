@@ -9,4 +9,4 @@ $buttonPlace="<button type='button' class='btn-outline-danger btn-light' data-to
 
 $collapse="<button class='btn btn-danger btn-sm btn-col' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseExample'"; 
 
-$heading="<p class='text-light text-center'>Use the button links below for more info about the soloists, compositons and composers!</p>"; ?>
+$heading="<p class='text-light text-center'>Use the button links below for info about the soloists, compositons and composers!</p>"; ?>
