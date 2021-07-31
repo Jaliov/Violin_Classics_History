@@ -9,7 +9,7 @@
     <div class="card-body text-light text-center">
         <div class="card-title">I am a musician, artist and web developer</div>
 
-        <div class="card-text btn-list">Check out some of my other sites here:</div><br>
+        <div class="card-text">Check out some of my other sites here:</div><br>
         <div class="text-center">
 
             <a href="https://jaliov.github.io/JoelRudinArt/index.html" class="btn btn-outline-danger btn-light btn-list"
