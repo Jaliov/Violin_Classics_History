@@ -18,11 +18,9 @@
             <a href="https://lisabflamenco.herokuapp.com/" class="btn btn-outline-danger btn-light btn-list"
                 target="_blank">Lisa Botalico
                 Flamenco!</a><br>
-            <a class="btn btn-outline-danger btn-light btn-list" href="https://frozen-beach-43331.herokuapp.com/"
-                target="_blank">Viola Quiz!</a>
             <a href="https://boiling-beyond-86124.herokuapp.com/" class="btn btn-outline-danger btn-light' btn-list"
                 target="_blank">Website
-                Portfolio</a><br>
+                Portfolio</a>
         </div>
     </div>
 </div>

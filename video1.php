@@ -121,7 +121,7 @@ $stmt->execute(array($id)); $musicians = $stmt->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <?php foreach($musicians as $musician): ?>
-<?php echo $buttonPlace . "data-content='$musician->info'  title = '$musician->role'>$musician->name</button>"; ?>
+<?php echo $buttonPlace . "data-content='$musician->info'  title = '$musician->role'>$musician->name</button><br/><a class = 'btn btn-outline-danger btn-sm text-light' href='https://frozen-beach-43331.herokuapp.com/' target='_blank'   id='heifetz_link'>Test your basic knowledge of the viola with my viola quizz!</a>"; ?>
 <?php endforeach; echo "</div></div><br>";?>
 
 
