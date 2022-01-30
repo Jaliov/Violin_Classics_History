@@ -6,7 +6,7 @@ $clip2 =  "https://www.youtube.com/embed/tiGnVQPKHt0"; #Mozart 3 Zimmerman
 
 $clip3 = "https://www.youtube.com/embed/cokCgWPRZPg?start=226&end=1473"; #Perlamn Beethoven Concerto
 
-$clip4 = "https://www.youtube.com/embed/eS1IG2BBy1Y"; //Mutter Mendelssohn
+$clip4 = "https://www.youtube.com/embed/eS1IG2BBy1Y?start=54"; //Mutter Mendelssohn
 
 $clip5 = "https://www.youtube.com/embed/_ohsBg6onXY";  //Bach Double Jensen Kavakos
 
