@@ -20,7 +20,7 @@ $clip9 = "https://www.youtube.com/embed/pg-ruM6lzM0?start=208"; //Paganini Ricci
 
 $clip10 = "https://www.youtube.com/embed/VaAGFXuqA7g"; //Mozart3 Menuhin
 
-$clip11 = "https://www.youtube.com/embed/DJh6i-t_I1Q"; //Oistrak Menuhin Bach Double
+$clip11 = "https://www.youtube.com/embed/LZ48G9UziRs"; //Oistrak Menuhin Bach Double
 
 $clip12 = "https://www.youtube.com/embed/SSbZRpuW08k?start=71"; # Hahn Mozart 3 
 
