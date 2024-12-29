@@ -25,6 +25,7 @@
             <div class="card-body">
                 <!-- <img src = "violin_brown_shadow.png" > -->
                 <h2 class="card-header rounded-top bg-transparent text-danger" id="header">Violin Classics!</h2>
+                <P>Great Violinists Play the Classics</P>
             </div>
 
 
